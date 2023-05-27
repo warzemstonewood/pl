@@ -1,7 +1,3 @@
-# pl
-Stolarstwo
-
-
 # [WARZEM Drewno & Kamień](https://warzemstonewood.github.io/pl)
 
 @Stolarstwo Artystyczne | Lite Drewno | Naturalne Oleje | Jaćwież | Podlasie | Polska 
