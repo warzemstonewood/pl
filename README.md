@@ -10,4 +10,4 @@ Stolarstwo
 
 Website in building 🔭, please visit [![instagram](https://img.shields.io/badge/WARZEM-0d1117?style=for-the-badge&logo=instagram&logoColor=instagram)](https://www.instagram.com/wa.rzem/)
 
-[![chair]([https://github.com/Wabram/Wabram.github.io/blob/main/krzes%C5%82oLogo.png](https://github.com/warzemstonewood/pl/blob/main/krzes%C5%82oLogo.png))]([https://www.instagram.com/wa.rzem/](https://warzemstonewood.github.io/pl/krzesla.html))
+[![chair](https://github.com/warzemstonewood/pl/blob/main/krzes%C5%82oLogo.png)]([https://www.instagram.com/wa.rzem/](https://warzemstonewood.github.io/pl/krzesla.html))
