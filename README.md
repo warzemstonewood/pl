@@ -13,7 +13,7 @@ Produkty realizowane: deski kuchenne do serwowania/ krojenia, rzeźbione łóżk
 
 Lite drewno jesionu, brzozy, klonu, dębu, orzecha włoskiego.
 
-Style: #Hygge #Scandic #Japan #Podlahia
+Style: #Hygge #Scandic #Japan #Podlachia
 
 
 [![instagram](https://img.shields.io/badge/WARZEM-0d1117?style=for-the-badge&logo=instagram&logoColor=instagram)](https://www.instagram.com/wa.rzem/)
