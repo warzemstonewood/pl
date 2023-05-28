@@ -1,4 +1,4 @@
-# [WARZEM Drewno & Kamień](https://warzemstonewood.github.io/pl)
+# [WARZEM Drewno & Kamień](https://warzemstonewood.github.io/pl) <a href="https://warzemstonewood.github.io/pl"><img src="https://github.com/warzemstonewood/warzemstonewood/blob/main/Website-595b40b65ba036ed117d3f78.svg" width="50" height="50"></a>
 
 @Stolarstwo Artystyczne | Lite Drewno | Naturalne Oleje | Jaćwież | Podlasie | Polska 
 
