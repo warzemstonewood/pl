@@ -98,28 +98,28 @@ img {vertical-align: middle;}
 <body>
 
 <div class="slideshow-container">
-
+  
 <div class="mySlides fade">
   <div class="numbertext">1 / 6</div>
+  <img src="20230508_143601.jpg" style="width:100%">
+  <div class="text">Deska do serwowania/ krojenia z <a  style="color:grey" href="https://warzemstonewood.github.io/pl/drewno.html#orzech">orzecha włoskiego</a> (Królewski Żongler)</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
   <img src="20230508_143445.jpg" style="width:100%">
   <div class="text">Deska do serwowania/ krojenia z <a  style="color:black" href="https://warzemstonewood.github.io/pl/drewno.html#orzech">orzecha włoskiego</a> (Królewski Żongler)</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 6</div>
+  <div class="numbertext">3 / 6</div>
   <img src="20230508_144235.jpg" style="width:100%">
   <div class="text">Deska do serwowania/ krojenia z <a  style="color:black" href="https://warzemstonewood.github.io/pl/drewno.html#orzech">orzecha włoskiego</a> (Królewski Żongler)</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 6</div>
-  <img src="20230508_143809.jpg" style="width:100%">
-  <div class="text">Deska do serwowania/ krojenia z <a  style="color:grey" href="https://warzemstonewood.github.io/pl/drewno.html#orzech">orzecha włoskiego</a> (Królewski Żongler)</div>
-</div>
-
-<div class="mySlides fade">
   <div class="numbertext">4 / 6</div>
-  <img src="20230508_143601.jpg" style="width:100%">
+  <img src="20230508_143809.jpg" style="width:100%">
   <div class="text">Deska do serwowania/ krojenia z <a  style="color:grey" href="https://warzemstonewood.github.io/pl/drewno.html#orzech">orzecha włoskiego</a> (Królewski Żongler)</div>
 </div>
 
@@ -150,8 +150,8 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(6)"></span> 
 </div>
 
-<script>
-let slideIndex = 1;
+<!--<script>
+let slideIndex = 0;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -166,18 +166,49 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
+  slideIndex++
+  if (slideIndex > slides.length) {slideIndex = 0}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+  
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+</script> -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex = n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
-
 </body>
 </html> 
