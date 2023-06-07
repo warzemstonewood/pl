@@ -361,15 +361,28 @@ Storona internetowa w budowie, zapytania i/lub oferty (zamówienia) proszę skł
 style="height:1000px; background-image: url(&#39;sky.png&#39;); background-repeat: no-repeat; background-attachment: fixed;
   background-size: cover;">
 <div style="text-align:center;">
-<h2>
-Stolarstwo z Podlasia
-</h2>
-<h4>
-Polska
-</h4>
-<p style="color:white">
+<div class="row-outer">
+<div class="container">
+<div class="animated-heading">
+<h1>
+Podaruj <span id="words" style="color:#7d704eff">Sobie</span> cząstkę
+Podlasia
+</h1>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+      (function () {
+        var words = ["Sobie","Ukochanej","Najbliższym","Przyjaciołom","Pokoleniom" ],
+        i = 0;
+        setInterval(function(){ $('#words').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 4000)
+      })();
+    </script>
+<h4 style="color:white">
 Jaćwież
-</p>
+</h4>
 </div>
 <div style="text-align:center; align-items: center;
       justify-content: center;">
@@ -413,20 +426,25 @@ Naturalne oleje lniane i tungowy
         size="5" color="grey"
         noshade>
 <p><br></p>
-<!-- <div class = "row" style="height:1000px; background-image: url('IMG_2644.JPG'); background-repeat: no-repeat; background-attachment: fixed;
-  background-size: cover;" >
+<div class="row"
+style="height:1000px; background-image: url(&#39;IMG_2644.JPG&#39;); background-repeat: no-repeat; background-attachment: fixed;
+  background-size: cover;">
 <div style="text-align:center;">
-  <h2>Wodą rzeźbione</h2>
-  <p style="color:white">obrazy z kolecji "woda" ocieplą każde wnętrze</p>
-  </div>
-  
-  <div style="text-align:center; align-items: center;
+<h2>
+Wodą rzeźbione
+</h2>
+<p style="color:white">
+inspiracje <!--czerpane z kolecji "woda" ocieplą każde wnętrze-->
+</p>
+</div>
+<div style="text-align:center; align-items: center;
       justify-content: center;
       width: 100vw;
       height: 50vh;">
-<iframe width="1300" height="650" src="slidesIndexWoda.html" seamless></iframe>
-</div> -->
+<!--<iframe width="1300" height="650" src="slidesIndexWoda.html" seamless></iframe>-->
 </div>
+</div>
+<hr />
 <!--For more information about how wood is processed, please visit at https://wabram.github.io/woodprocessed-->
 
 <footer>
