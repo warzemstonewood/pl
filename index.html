@@ -184,10 +184,16 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
   position: absolute;
   z-index: 000;
 }
+.home:before{
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(3, 96, 251, 0.3);
+}
 .slider-navigation {
   z-index: 888;
-  top: -20%;
-  left: -17px;
+  top: -40%;
+  left: 180px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -198,14 +204,14 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
 .slider-navigation .nav-btn {
   width: 12px;
   height: 12px;
-  background: #fff;
+  background: #00cdff00;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
   transition: 0.3s ease;
 }
 .slider-navigation .nav-btn.active{
-  background: #2696E9;
+  background: #ffffff44; /*#2696E9;*/
 }
 .slider-navigation .nav-btn:not(:last-child) {
   margin-right: 100px;
@@ -220,15 +226,16 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
   clip-path: circle(0% at 0 50%);
 }
 .video-slide.active{
-  clip-path: circle(150.0% at 0 50%);
+clip-path: circle(150.0% at 0 50%);
+  
 }
 
 
 
 #myBtn1 {
-  width: 40px;
+  width: 0px;
   font-size: 10px;
-  padding: 5px;
+  padding: 0px;
   border: none;
   background: #000;
   color: #fff;
@@ -240,9 +247,9 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
   color: black;
 }
 #myBtn2 {
-  width: 40px;
+  width: 0px;
   font-size: 10px;
-  padding: 5px;
+  padding: 0px;
   border: none;
   background: #000;
   color: #fff;
@@ -258,18 +265,19 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
 
 
       <body>
-      <div class="home" style="background-image: url(&#39;movies/water.png&#39;);  background-position: center;
+      <div class="home"
+style="background-image: url(&#39;movies/water.png&#39;);  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; display: block;">
-      <video class="video-slide" id="myVideo1" autoplay loop poster="movies/water.png">
+      <video class="video-slide" id="myVideo1" loop preload="movies/water.png">
       <!--<source src="movies/20230611_191755_3.mp4" type="video/mp4">-->
       <source src="movies/20230611_191755_3.mp4" type="video/mp4">
       <!--https://github.com/warzemstonewood/warzemstonewood.github.io/releases/tag/webm/--->
       </video>
       <video class="video-slide" id="myVideo2" loop poster="movies/water3.png">
           <!--<source src="movies/20230611_191755_3.mp4" type="video/mp4">  movies/20230709_162510.mp4-->
-          <source src="movies/0001-0146.mp4" type="video/mp4">
+          <source src="movies/0001-1588.mp4" type="video/mp4">
           
            <!--https://github.com/warzemstonewood/warzemstonewood.github.io/releases/tag/webm/--->
         </video>
@@ -278,7 +286,7 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
       <!--<p title="Księstwo Jaćwieży, Korona Podlasia, Polska" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'k style="text-align:center;">
       <a href="https://warzemstonewood.github.io/pl"></a></p>-->
             <div style="padding: 100px 0;letter-spacing: 7px; text-align:center;">
-<a href="index.html"><img src="movies/YotvingianWb.svg" 
+<a href="index.html"><img src="movies/YotvingianWb5.svg" 
                                                        alt="Komforotwe wygodne ergonomiczne estetyczne meble z litego drewna orzech włoski dąb jesion klon brzoza krzesła krzesło deski do krojenia deski do serwowania wyspy kuchenne ławeczki stoły łóżka łóżko" 
                                                        title="Urok Jaćwieży" 
                                                        height="300px" width="" style="background-color:">
@@ -301,7 +309,7 @@ div.gray { background-color:#f2f2f3; border-radius: 5px; padding: 20px;}
       <!--<div class="middle-line"></div>
       <button>DISCOVER</button>-->
       </div>
-      <div class="slider-navigation"><div class="nav-btn active"><button id="myBtn1" onclick="myFunction1()">Pause</button></div><div class="nav-btn active"><button id="myBtn2" onclick="myFunction2()">Play</button></div></div>
+      <div class="slider-navigation" style="line-height: 0.5;"><div class="nav-btn active">&nbsp;&nbsp;<button id="myBtn1" onclick="myFunction1()"  title="Szum fal jeziora jaćwingów" style="font-size:15px;">Play</button></div></div><p></p><div class="slider-navigation"><div class="nav-btn active">&nbsp;&nbsp;<button id="myBtn2" onclick="myFunction2()"  title="Szum rzeki jaćwingów"style="font-size:15px;">Play</button></div></div>
       </div>
       <script type="text/javascript">
   //Javascript for video slider navigation
